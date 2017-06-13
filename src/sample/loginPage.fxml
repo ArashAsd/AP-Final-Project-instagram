@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <StackPane prefHeight="602.0" prefWidth="752.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Group>
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="154.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="136.0" layoutY="213.0" promptText="username" />
+                  <Text layoutX="135.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+                  <Text layoutX="137.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+                  <Text layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?" />
+                  <Button fx:id="signUpButton" alignment="CENTER" layoutX="337.0" layoutY="416.0" mnemonicParsing="false" text="Sign Up Now!" />
+                  <Button fx:id="signInButton" layoutX="197.0" layoutY="360.0" mnemonicParsing="false" onAction="#signInButtonHandler" text="Sign In" />
+                  <Button alignment="CENTER" layoutX="180.0" layoutY="505.0" mnemonicParsing="false" text="Dark theme" />
+                  <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="136.0" layoutY="297.0" promptText="password" />
+               </children>
+            </Group>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
